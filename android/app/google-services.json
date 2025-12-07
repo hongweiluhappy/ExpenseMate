@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "556011986401",
+    "project_id": "expensemate-ced28",
+    "storage_bucket": "expensemate-ced28.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:556011986401:android:2834a2c93cd331e034c6a0",
+        "android_client_info": {
+          "package_name": "com.example.expense_mate"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwGXcjZMRCceeBDOPPQ9vbepJJEgrXNLI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

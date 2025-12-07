@@ -1,0 +1,340 @@
+import '../models/city_data.dart';
+
+/// Major US cities consumption database
+/// All amounts in USD per month
+class CitiesDatabase {
+  static const List<CityData> cities = [
+    // California - High cost cities
+    CityData(
+      name: 'San Francisco',
+      province: 'California',
+      rentLow: 1800,
+      rentMid: 2800,
+      rentHigh: 4500,
+      foodLow: 400,
+      foodMid: 600,
+      foodHigh: 900,
+      transportLow: 100,
+      transportMid: 150,
+      transportHigh: 250,
+      studyLow: 100,
+      studyMid: 200,
+      studyHigh: 400,
+      entertainmentLow: 150,
+      entertainmentMid: 300,
+      entertainmentHigh: 600,
+      otherLow: 100,
+      otherMid: 200,
+      otherHigh: 400,
+    ),
+    CityData(
+      name: 'Los Angeles',
+      province: 'California',
+      rentLow: 1500,
+      rentMid: 2300,
+      rentHigh: 3800,
+      foodLow: 350,
+      foodMid: 550,
+      foodHigh: 800,
+      transportLow: 120,
+      transportMid: 180,
+      transportHigh: 300,
+      studyLow: 100,
+      studyMid: 200,
+      studyHigh: 400,
+      entertainmentLow: 150,
+      entertainmentMid: 280,
+      entertainmentHigh: 550,
+      otherLow: 100,
+      otherMid: 200,
+      otherHigh: 350,
+    ),
+    CityData(
+      name: 'San Diego',
+      province: 'California',
+      rentLow: 1400,
+      rentMid: 2100,
+      rentHigh: 3400,
+      foodLow: 350,
+      foodMid: 500,
+      foodHigh: 750,
+      transportLow: 100,
+      transportMid: 150,
+      transportHigh: 250,
+      studyLow: 100,
+      studyMid: 200,
+      studyHigh: 400,
+      entertainmentLow: 150,
+      entertainmentMid: 250,
+      entertainmentHigh: 500,
+      otherLow: 100,
+      otherMid: 180,
+      otherHigh: 300,
+    ),
+
+    // New York
+    CityData(
+      name: 'New York City',
+      province: 'New York',
+      rentLow: 2000,
+      rentMid: 3200,
+      rentHigh: 5000,
+      foodLow: 450,
+      foodMid: 700,
+      foodHigh: 1000,
+      transportLow: 130,
+      transportMid: 200,
+      transportHigh: 350,
+      studyLow: 120,
+      studyMid: 250,
+      studyHigh: 500,
+      entertainmentLow: 200,
+      entertainmentMid: 400,
+      entertainmentHigh: 800,
+      otherLow: 150,
+      otherMid: 250,
+      otherHigh: 450,
+    ),
+
+    // Massachusetts
+    CityData(
+      name: 'Boston',
+      province: 'Massachusetts',
+      rentLow: 1600,
+      rentMid: 2500,
+      rentHigh: 4000,
+      foodLow: 400,
+      foodMid: 600,
+      foodHigh: 900,
+      transportLow: 90,
+      transportMid: 140,
+      transportHigh: 220,
+      studyLow: 120,
+      studyMid: 250,
+      studyHigh: 500,
+      entertainmentLow: 150,
+      entertainmentMid: 300,
+      entertainmentHigh: 600,
+      otherLow: 120,
+      otherMid: 200,
+      otherHigh: 350,
+    ),
+
+    // Washington
+    CityData(
+      name: 'Seattle',
+      province: 'Washington',
+      rentLow: 1400,
+      rentMid: 2200,
+      rentHigh: 3600,
+      foodLow: 380,
+      foodMid: 550,
+      foodHigh: 850,
+      transportLow: 100,
+      transportMid: 150,
+      transportHigh: 250,
+      studyLow: 100,
+      studyMid: 200,
+      studyHigh: 400,
+      entertainmentLow: 150,
+      entertainmentMid: 280,
+      entertainmentHigh: 550,
+      otherLow: 100,
+      otherMid: 180,
+      otherHigh: 320,
+    ),
+
+    // Illinois
+    CityData(
+      name: 'Chicago',
+      province: 'Illinois',
+      rentLow: 1000,
+      rentMid: 1600,
+      rentHigh: 2800,
+      foodLow: 350,
+      foodMid: 500,
+      foodHigh: 750,
+      transportLow: 100,
+      transportMid: 150,
+      transportHigh: 250,
+      studyLow: 100,
+      studyMid: 200,
+      studyHigh: 400,
+      entertainmentLow: 120,
+      entertainmentMid: 250,
+      entertainmentHigh: 500,
+      otherLow: 100,
+      otherMid: 180,
+      otherHigh: 300,
+    ),
+
+    // Texas
+    CityData(
+      name: 'Austin',
+      province: 'Texas',
+      rentLow: 1100,
+      rentMid: 1700,
+      rentHigh: 2800,
+      foodLow: 350,
+      foodMid: 500,
+      foodHigh: 750,
+      transportLow: 120,
+      transportMid: 180,
+      transportHigh: 300,
+      studyLow: 100,
+      studyMid: 200,
+      studyHigh: 400,
+      entertainmentLow: 150,
+      entertainmentMid: 280,
+      entertainmentHigh: 550,
+      otherLow: 100,
+      otherMid: 180,
+      otherHigh: 320,
+    ),
+    CityData(
+      name: 'Houston',
+      province: 'Texas',
+      rentLow: 900,
+      rentMid: 1400,
+      rentHigh: 2400,
+      foodLow: 320,
+      foodMid: 480,
+      foodHigh: 700,
+      transportLow: 130,
+      transportMid: 200,
+      transportHigh: 330,
+      studyLow: 100,
+      studyMid: 200,
+      studyHigh: 400,
+      entertainmentLow: 130,
+      entertainmentMid: 250,
+      entertainmentHigh: 500,
+      otherLow: 100,
+      otherMid: 170,
+      otherHigh: 300,
+    ),
+
+    // Florida
+    CityData(
+      name: 'Miami',
+      province: 'Florida',
+      rentLow: 1200,
+      rentMid: 1900,
+      rentHigh: 3200,
+      foodLow: 350,
+      foodMid: 520,
+      foodHigh: 780,
+      transportLow: 120,
+      transportMid: 180,
+      transportHigh: 300,
+      studyLow: 100,
+      studyMid: 200,
+      studyHigh: 400,
+      entertainmentLow: 150,
+      entertainmentMid: 280,
+      entertainmentHigh: 550,
+      otherLow: 100,
+      otherMid: 180,
+      otherHigh: 320,
+    ),
+
+    // Colorado
+    CityData(
+      name: 'Denver',
+      province: 'Colorado',
+      rentLow: 1100,
+      rentMid: 1700,
+      rentHigh: 2800,
+      foodLow: 350,
+      foodMid: 500,
+      foodHigh: 750,
+      transportLow: 110,
+      transportMid: 170,
+      transportHigh: 280,
+      studyLow: 100,
+      studyMid: 200,
+      studyHigh: 400,
+      entertainmentLow: 140,
+      entertainmentMid: 270,
+      entertainmentHigh: 530,
+      otherLow: 100,
+      otherMid: 180,
+      otherHigh: 320,
+    ),
+
+    // Georgia
+    CityData(
+      name: 'Atlanta',
+      province: 'Georgia',
+      rentLow: 1000,
+      rentMid: 1500,
+      rentHigh: 2500,
+      foodLow: 330,
+      foodMid: 480,
+      foodHigh: 720,
+      transportLow: 120,
+      transportMid: 180,
+      transportHigh: 300,
+      studyLow: 100,
+      studyMid: 200,
+      studyHigh: 400,
+      entertainmentLow: 130,
+      entertainmentMid: 250,
+      entertainmentHigh: 500,
+      otherLow: 100,
+      otherMid: 170,
+      otherHigh: 300,
+    ),
+
+    // Pennsylvania
+    CityData(
+      name: 'Philadelphia',
+      province: 'Pennsylvania',
+      rentLow: 1000,
+      rentMid: 1600,
+      rentHigh: 2700,
+      foodLow: 350,
+      foodMid: 500,
+      foodHigh: 750,
+      transportLow: 100,
+      transportMid: 150,
+      transportHigh: 250,
+      studyLow: 100,
+      studyMid: 200,
+      studyHigh: 400,
+      entertainmentLow: 130,
+      entertainmentMid: 250,
+      entertainmentHigh: 500,
+      otherLow: 100,
+      otherMid: 170,
+      otherHigh: 300,
+    ),
+  ];
+
+  /// Get city data by name
+  static CityData? getCityByName(String name) {
+    try {
+      return cities.firstWhere((city) => city.name == name);
+    } catch (e) {
+      return null;
+    }
+  }
+
+  /// Get list of all city names
+  static List<String> getCityNames() {
+    return cities.map((city) => city.name).toList();
+  }
+
+  /// Get cities grouped by province
+  static Map<String, List<CityData>> getCitiesByProvince() {
+    final Map<String, List<CityData>> result = {};
+    for (final city in cities) {
+      if (!result.containsKey(city.province)) {
+        result[city.province] = [];
+      }
+      result[city.province]!.add(city);
+    }
+    return result;
+  }
+}
+

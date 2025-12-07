@@ -1,0 +1,10 @@
+{
+    "dart.flutterSdkPath": null,
+    "dart.debugExternalPackageLibraries": true,
+    "dart.debugSdkLibraries": false,
+    "dart.vmAdditionalArgs": [
+        "--disable-service-auth-codes",
+        "--enable-vm-service"
+    ]
+}
+
